@@ -159,16 +159,69 @@ footer {
     justify-content: center;
     display: flex;
     justify-content: space-around;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#foot-contact {
 
+#foot-contact {
+    width: auto;
 }
 
 #foot-connect {
-    
+    width: auto;
 }
 
 #foot-message {
+    width: 40%;    
+}
+
+#foot-message form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+form h1, h3 {
+    text-align: center;
     
 }
+
+form h3 {
+    margin-top: 0px;
+}
+
+form .email {
+    width: 70%;
+    height: 30px;
+    align-self: center;
+    border-radius: 2px;
+    border: none;
+}
+
+form .message-paragraph {
+    width: 70%;
+    height: 100px;
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+}
+
+form .message-paragraph, .email {
+    justify-content: end;
+}
+
+.email::placeholder,
+.message-paragraph::placeholder {
+    text-align: center;
+}
+
+form button {
+    width: 100px;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
