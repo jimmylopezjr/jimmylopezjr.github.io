@@ -1,6 +1,7 @@
 body, html {
     margin: 0px;
     padding: 0px;
+    /* scroll-behavior: smooth !important; */
 
 }
 
@@ -69,6 +70,7 @@ main {
 .divlogo a, .navmenu ul a {
     text-decoration: none;
     color: black;
+    transition: 0.3s ease;
 
 }
 
