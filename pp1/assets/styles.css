@@ -1,3 +1,5 @@
+/* start of general styles */
+
 body, html {
     margin: 0px;
     padding: 0px;
@@ -10,6 +12,9 @@ body, html {
     font-family: 'Courier New';
 }
 
+/* end of general styles */
+
+/* start of main styles */
 main {
     background-image: url("images/mainbg.jpg");
     width:100%;
@@ -21,6 +26,9 @@ main {
 
 }
 
+/* end of main styles */
+
+/* start of nav styles */
 .navbar {
     width:1200px;    
     background-color: rgb(255, 255, 255, 0.1);
@@ -54,7 +62,7 @@ main {
     0% {
         transform: rotate(0deg);
       }
-      100% {
+    100% {
         transform: rotate(360deg);
 }
 }
@@ -112,12 +120,21 @@ main {
     align-items: center;
 }
 
+/* end of nav styles */
+
+
+/* start of section main styles */
+
 .sectionmain {
     width: 1200px;
     height: 500px;
     margin: 0px auto;
  
 }
+
+/* end of section main styles */
+
+/* start of section about styles */
 
 #secabout {
     width: 1200px;
@@ -127,6 +144,10 @@ main {
 
 }
 
+/* end of section about styles */
+
+/* start of section services styles */
+
 #secservices {
     width: 1200px;
     height: 500px;
@@ -134,6 +155,10 @@ main {
     margin: 0px auto;
 
 }
+
+/* end of section services styles */
+
+/* start of section payment styles */
 
 #secpayments {
     width: 1200px;
@@ -143,6 +168,10 @@ main {
 
 }
 
+/* end of payment section styles */
+
+/* start of payments sections styles */
+
 #secmyaccounts {
     width: 1200px;
     height: 500px;
@@ -150,6 +179,11 @@ main {
     margin: 0px auto;
 
 }
+
+/* end of payment section styles */
+
+
+/* start of footer styles */
 
 footer {
     width: 1200px;
@@ -219,6 +253,13 @@ footer .foot-connect img {
     justify-content: center;
 }
 
+.foot-connect img {
+    transition: filter 0.3s;
+}
+
+.foot-connect img:hover {
+    filter: brightness(0.5);
+}
 
 .footlogo > div:last-child {
     display: flex;
@@ -311,3 +352,4 @@ form button:hover {
 
 }
 
+/* end of footer styles */
