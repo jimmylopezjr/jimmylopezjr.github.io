@@ -247,13 +247,14 @@ footer .foot-message h1 {
     flex-direction: column;
 }
 
-form h1, h3 {
+form h1, h4 {
     text-align: center;
     
 }
 
-form h3 {
+form h4 {
     margin-top: 0px;
+    font-family: sans-serif;
 }
 
 form .email {
@@ -280,6 +281,7 @@ form .message-paragraph, .email {
 .email::placeholder,
 .message-paragraph::placeholder {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 form button {
@@ -293,10 +295,9 @@ form button {
 form button {
     background-color:rgb(30,144,255);
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 2px;
+    font-family: arial;
+    padding: 4px;
 }
-
 
 form button:hover {
     background-color: rgb(255, 255, 255);
