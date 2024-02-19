@@ -18,11 +18,12 @@ body, html {
 main {
     background-image: url("images/mainbg.jpg");
     width:100%;
-    height: 2570px;
+    height: 2670px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+
 
 }
 
@@ -30,13 +31,14 @@ main {
 
 /* start of nav styles */
 .navbar {
-    width:1200px;    
-    background-color: rgb(255, 255, 255, 0.1);
+    width:1250px;    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     margin: 0px auto;
     position: sticky;
-    top: 0;
+    top: 10px;
 }
 
 
@@ -68,9 +70,11 @@ main {
 }
 
 .divlogo ul {
-    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     list-style: none;
     font-weight: bold;
+    border-right: 2px solid rgb(0, 0, 0, 0.2);
 
 }
 
@@ -115,10 +119,33 @@ main {
     list-style: none;    
     justify-content: space-evenly;
 }
-
+   
 .navmenu ul li {   
     align-items: center;
 }
+
+
+.dropdown-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+ul li ul.dropdown-items {
+
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li ul.dropdown-items a:hover {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* end of nav styles */
 
@@ -132,28 +159,71 @@ main {
  
 }
 
+ 
+
 /* end of section main styles */
 
 /* start of section about styles */
 
 #secabout {
-    width: 1200px;
+    width: 100%;
     height: 500px;
-    background-color: rgb(89, 164, 187);
-    margin: 0px auto;
-
+    padding-top: 80px;
 }
 
+#secabout .title, .content {
+    display: flex;
+}
+
+#secabout .title{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+#secabout .content {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding-left: 10px;
+    flex-direction: row;
+    height: 500px;
+}
+
+#secabout .content div {
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+
+#secabout .content .des {
+    text-align: justify;
+} 
+
+
+
 /* end of section about styles */
+
+
 
 /* start of section services styles */
 
 #secservices {
-    width: 1200px;
+    width: 100%;
     height: 500px;
-    background-color: rgb(203, 81, 181);
-    margin: 0px auto;
+    padding-top: 80px;
+}
 
+#secservices .content{
+    background-color: black;
+    color: white;
+    height: 500px;
+    display: flex;
+}
+
+#secservices .content div {
+    width: 50%;
 }
 
 /* end of section services styles */
@@ -161,11 +231,20 @@ main {
 /* start of section payment styles */
 
 #secpayments {
-    width: 1200px;
+    width: 100%;
     height: 500px;
-    background-color: rgb(192, 195, 109);
-    margin: 0px auto;
+    padding-top: 80px;
+}
 
+#secpayments .content{
+    background-color: rgb(192, 195, 109);
+    color: white;
+    height: 500px;
+    display: flex;
+}
+
+#secpayments .content div {
+    width: 50%;
 }
 
 /* end of payment section styles */
@@ -173,12 +252,22 @@ main {
 /* start of payments sections styles */
 
 #secmyaccounts {
-    width: 1200px;
+    width: 100%;
     height: 500px;
-    background-color: rgb(86, 209, 86);
-    margin: 0px auto;
-
+    padding-top: 80px;
 }
+
+#secmyaccounts .content{
+    background-color: rgb(86, 209, 86);
+    color: white;
+    height: 500px;
+    display: flex;
+}
+
+#secmyaccounts .content div {
+    width: 50%;
+}
+
 
 /* end of payment section styles */
 
@@ -189,7 +278,7 @@ footer {
     width: 1200px;
     height: 500px;
     background-color: rgb(0, 0, 0, 0.5);
-    margin: 1500px auto 0px auto;
+    margin: 1889px auto 0px auto;
     display: flex;
     justify-content: space-around;
     color: aliceblue;
