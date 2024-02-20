@@ -30,6 +30,7 @@ main {
 /* end of main styles */
 
 /* start of nav styles */
+
 .navbar {
     width:1250px;    
     background-color: rgb(255, 255, 255);
@@ -38,7 +39,7 @@ main {
     align-items: center;
     margin: 0px auto;
     position: sticky;
-    top: 10px;
+    top: 0px;
 }
 
 
@@ -169,6 +170,7 @@ ul li ul.dropdown-items a:hover {
     width: 100%;
     height: 500px;
     padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 #secabout .title, .content {
@@ -176,19 +178,28 @@ ul li ul.dropdown-items a:hover {
 }
 
 #secabout .title{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.1);
     width: 200px;
     padding-left: 10px;
     border-radius: 10px 10px 0 0;
 }
 
-
 #secabout .content {
-    background-color: rgb(255, 255, 255);
     display: flex;
-    padding-left: 10px;
+    padding-left: 25px;
     flex-direction: row;
     height: 500px;
+    background-image: url("images/secaboutmainbg.jpg");
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#secabout .content .des {
+    text-align: justify;
+
 }
 
 #secabout .content div {
@@ -196,10 +207,18 @@ ul li ul.dropdown-items a:hover {
     margin-bottom: 20px;
 }
 
+.content .des h2 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 50px;
+}
 
-#secabout .content .des {
-    text-align: justify;
-} 
+.content .des p {
+    font-family: Comic Sans MS, Comic Sans, cursivemonospace;
+    font-size: 25px;
+    text-indent: 20px;
+
+}
+
 
 
 
@@ -213,17 +232,56 @@ ul li ul.dropdown-items a:hover {
     width: 100%;
     height: 500px;
     padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 #secservices .content{
-    background-color: black;
-    color: white;
+    width: 100%;
     height: 500px;
+    background-image: url("images/secservicesbg.jpg");
+    background-size: cover;
+    background-position: 0px -200px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
     display: flex;
+    justify-content: space-evenly;
 }
 
 #secservices .content div {
-    width: 50%;
+    height: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+}
+
+#secservices .content div form {
+    background-color: white;
+    height: 200px;
+    color: black;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+#secservices .content div form:hover {
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+.content form img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#secservices .content div form p {
+    text-align: justify;
+    font-size: 15px;
+    padding: 7px;
+    font-family: sans-serif;
 }
 
 /* end of section services styles */
@@ -232,20 +290,97 @@ ul li ul.dropdown-items a:hover {
 
 #secpayments {
     width: 100%;
-    height: 500px;
+    height: 700px;
     padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#secpayments .paymentdes {
+    text-align: center;
+}
+
+#secpayments .paymentdes h1 {
+    font-size: 40px;    
+}
+
+.paymentdes #pricedes {
+    width: 700px;
+    margin: 0 auto;
 }
 
 #secpayments .content{
-    background-color: rgb(192, 195, 109);
     color: white;
     height: 500px;
     display: flex;
+    justify-content: space-evenly;
+    
 }
 
-#secpayments .content div {
-    width: 50%;
+#secpayments .content div{
+    padding: 0px;
+
 }
+
+#secpayments .content div form{
+    width: 350px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#secpayments .content div form:hover{
+    background-color: rgb(71, 71, 71);
+    transition: 0.3s ease;
+    color: aliceblue;
+}
+
+#i-acad-pay {
+    height: 80px;
+}
+
+.content div form li {
+    list-style-type: square;
+    font-weight: bold;
+}
+
+form h1 {
+    font-size: 30px;
+    font-family: Marker Felt, fantasy;
+    font-weight: 80;
+}
+
+
+form p {
+    font-style: italic;
+}
+
+.res-pay form {
+    background-color: rgb(223, 202, 41);
+}
+
+.acad-pay form {
+    background-color: rgb(18, 173, 176);
+}
+
+.data-pay form {
+    background-color: rgb(41, 85, 166);
+}
+
+.modepay {
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Marker Felt, fantasy;
+    font-weight: 20;
+    color: rgb(26, 74, 116);
+    padding: 0px;
+}
+
 
 /* end of payment section styles */
 
