@@ -3,7 +3,8 @@
 body, html {
     margin: 0px;
     padding: 0px;
-    /* scroll-behavior: smooth !important; not working*/
+    scroll-behavior: smooth !important;
+
 
 }
 
@@ -369,11 +370,14 @@ form p {
 }
 
 .modepay {
+    margin-left: 45px;
+}
+
+.modepay {
     margin-top: 30px;
-    background-color: rgb(0, 0, 0, 0.05);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: Marker Felt, fantasy;
     font-weight: 20;
@@ -389,7 +393,7 @@ form p {
 #secmyaccounts {
     width: 1200px;
     height: 500px;
-    padding-top: 80px;
+    padding-top: 150px;
 }
 
 #secmyaccounts .content{
@@ -443,23 +447,22 @@ form p {
 .signup-des div:nth-child(2) h1 {
     display: flex;
     justify-content: center;
-    background-color:rgb(138, 43, 226);
+    background-color:rgb(43, 83, 226);
     margin: 0px;
     font-size: 90px;    
     border-radius: 50px;
-    box-shadow: 8px 8px 3px rgb(138, 43, 226, 0.4);
+    box-shadow: 8px 8px 3px rgb(63, 62, 63, 0.5);
 }
 
 .signup-des div:nth-child(3) {
-    padding-left: 100px;
     height: 300px;
     display: flex;
     align-items:center;
     justify-content:flex-end
 }
 
-.signup-des div:nth-child(3) button {
-    font-size: 40px;
+.signup-des button {
+    font-size: 30px;
     display: flex;
     align-items: center;
     background-color: rgb(0, 197, 197);
@@ -468,33 +471,73 @@ form p {
     border-left: none;
     border-bottom: 3px solid rgb(255, 255, 255, 0.8); 
     border-right: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    animation: shadow-glowing 2s infinite;
 }
 
-.signup-des div:nth-child(3) button a {
-    text-decoration: none;
+@keyframes shadow-glowing {
+    0% {
+        box-shadow: 0 0 0px rgb(255, 0, 0); 
+    }
+    50% {
+        box-shadow: 0 0 40px rgb(255, 0, 0); 
+    }
+    100% {
+        box-shadow: 0 0 0px rgb(255, 0, 0); 
+    }
 }
 
-.signup-des div:nth-child(3) button img {
+.signup-des button:hover {
+    cursor: pointer;
+}
+
+.signup-des button img {
     width: 40px;
     height: 40px;
 }
 
-.signup-des div:nth-child(3) button:hover {
-    transform: scale(1.1);
-    transition: 0.3s ease;
-}
-
 .signin-form {
     display: flex;
-    justify-content:flex-end
+    justify-content:flex-end;
+    align-items: center;
 }
 
 .signin-form form {
+    height: 300px;
     padding: 40px;
-    background-color: aqua;
+    background-color: rgb(15, 136, 155, 0.7);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid rgb(255, 255, 255, 0.8); 
+    border-right: 2px solid rgb(255, 255, 255);
+
 }
 
+
+.signin-form form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.signin-form form input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+}
+
+.signin-form form button {
+    margin-left:75px;
+    padding: 5px;
+    font-size: 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.8); 
+    border-right: 1px solid rgb(255, 255, 255);
+}
 
 /* end of payment section styles */
 
@@ -504,8 +547,8 @@ form p {
 footer {
     width: 1200px;
     height: 500px;
-    background-color: rgb(0, 0, 0, 0.5);
-    margin: 2500px auto 0px auto;
+    background-color: rgb(0, 0, 0, 0.3);
+    margin: 2400px auto 0px auto;
     display: flex;
     justify-content: space-around;
     color: aliceblue;
@@ -656,8 +699,9 @@ form button {
 form button {
     background-color:rgb(30,144,255);
     color: white;
-    font-family: arial;
+    font-family:  Sans MS, Comic Sans, cursive;
     padding: 4px;
+
 }
 
 form button:hover {
@@ -665,6 +709,8 @@ form button:hover {
     transition: 0.2s ease;
     color: black;
     box-shadow: 2px 2px;
+    cursor: pointer;
+
 
 }
 
