@@ -42,26 +42,6 @@ nav a img {
     margin: 10px;
 }
 
-@media screen and (max-width: 1000px) {
-
-    #sec-about div {
-        padding-left: 10px;
-    
-    }
-    
-    #sec-about div h2 {
-        font-size: 30px;
-    }
-
-    #sec-about div p {
-        font-size: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
-        
-    }   
-}
-
-
 @media screen and (max-width: 400px) {
     nav div:first-child a {
         font-size: 14px;
@@ -105,10 +85,41 @@ nav a img {
     text-align: justify;
 }
 
+@media screen and (max-width: 1000px) {
+
+    #sec-about div {
+        padding-left: 10px;
+    
+    }
+    
+    #sec-about div h2 {
+        font-size: 30px;
+    }
+
+    #sec-about div p {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }   
+}
+
 
 /* end of about styles */
 
 /* start of services styles */
+
+#sec-services {
+    padding: 0%;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    #sec-services {
+        height: 800px;
+    }
+    
+}
 
 .form-div {
     width: 100%;
@@ -142,25 +153,16 @@ nav a img {
     transform: scale(1.07);
 }
 
-
-@media screen and (max-width: 1400px) {
-    .form-div div .first-form {
-        height: 280px;
-        margin-top: 250px;
-
-}
-}
-
 @media screen and (max-width: 1230px) {
     
     .form-div div > form {
-        height: 350px;
+        height: 320px;
 
 }
  
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     
     .form-div .first-form {
         margin-top: 200px;
@@ -168,12 +170,64 @@ nav a img {
 
     .form-div div > form {
         margin-bottom: 10px;
-        height: 150px;
+        height: 180px;
 
 }
  
 }
 
-
 /* end of services styles */
 
+
+/* start of pricing styles */
+
+#sec-pricing .titdes h1 {
+    font-size: 50px;
+}
+
+#sec-pricing .titdes p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+form h1 {
+    font-size: 30px;
+    font-family: Marker Felt, fantasy;
+    font-weight: 80;
+}
+
+.res-pay {
+    background-color: rgb(223, 202, 41);
+}
+
+
+.acad-pay form {
+    background-color: rgb(18, 173, 176);
+    margin-top: 100px;
+}
+
+.data-pay form {
+    background-color: rgb(41, 85, 166);
+}
+
+.secpayments div form{
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.secpayments div form:hover{
+    background-color: rgb(71, 71, 71);
+    transition: 0.3s ease;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 767px) {
+    .acad-pay form {
+        margin-top: 0px;
+    } 
+ 
+}
+
+
+/* end of pricing styles */
