@@ -327,7 +327,7 @@ form h1 {
 }
 
 
-.signin-btn button:hover {
+.signin-btn .signinbut:hover {
     background-color: rgb(255, 0, 0);
     border-color: rgb(255, 0, 0);;
     cursor: pointer;
@@ -342,6 +342,10 @@ form h1 {
 footer {
     background-color: rgb(0, 0, 0, 0.2);
     height: auto;
+}
+
+#logo-des p {
+    text-align: justify;
 }
 
 .aced-icons img {
@@ -374,8 +378,10 @@ footer .foot-connect img {
 }
 
 .foot-message form button:hover {
-    background-color: rgb(255, 0, 0);
-    border-color: rgb(255, 0, 0);;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color:black;
+    border: 1px solid black;
     cursor: pointer;
     
 }
@@ -416,3 +422,99 @@ form .message-paragraph, .email {
 
 
 /* end of footer styles  */
+
+
+/* START OF MY PROJECTS STYLES */
+
+
+/* start of mp-menu styles */
+
+
+    .mp-menu div a {
+        text-decoration: none;
+        color: black;
+    }   
+
+    @media screen and (max-width: 321px) {
+        .mp-menu div {
+            font-size: 10px;
+        }           
+    }
+    
+
+/* end of mp-menu styles */
+
+/* start of mp-menu updates styles */
+    .mp-menu-update {
+        height: 500px;
+    }
+
+    .mp-menu-update div:first-child {
+        text-align: center;
+    }
+    .mp-menu-update div:last-child {
+        background-image: url('/assets/images/mp-menu-update.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .mp-menu-update button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .mp-menu-update button {
+        background-color: rgb(79, 82, 244);
+        border: none;
+    }
+
+    .mp-menu-update button:hover {
+        background-color: rgb(255, 0, 0);
+        border-color: rgb(255, 0, 0);;
+        cursor: pointer;
+    }           
+
+
+/* start of mp-menu updates styles */
+
+/* start of mp-menu calendar styles */
+    .mp-menu-calendar {
+        height: 600px;
+        background-image: url('/assets/images/mp-menu-calendar.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -90px;
+    }
+
+    .mp-menu-calendar div:first-child {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        color: white;
+
+    }
+
+    iframe {
+        border: 1px solid black;
+        padding: 10px;
+        box-shadow: 1px 1px 5px 5px rgb(133, 133, 133);
+    }
+
+    @media screen and (max-width: 768px) {
+        iframe {
+            width: 400px;
+            height: 300px;
+        }              
+    }
+
+    @media screen and (max-width: 415px) {
+        iframe {
+            width: 300px;
+            height: 300px;
+        }              
+    }
+
+/* end of mp-menu calendar styles */
+
+
+
+/* END OF MY PROJECTS STYLES */
