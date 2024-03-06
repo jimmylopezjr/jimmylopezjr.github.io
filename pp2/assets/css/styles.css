@@ -520,6 +520,9 @@ form .message-paragraph, .email {
         margin-left: 0px;
     }
 
+    @media only screen and (min-width: 600px) and (max-width: 900px) {
+        /* Your CSS styles for this range */
+      }
 
 /* end of mp-menu ps styles */
 
