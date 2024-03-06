@@ -1,6 +1,7 @@
 body, html {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth !important;
 
 }
 
@@ -20,7 +21,8 @@ body {
 
 nav {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace; 
+     
 }
 
 nav a img {
@@ -127,7 +129,7 @@ nav a img {
     background-image: url('/assets/images/secservicesbg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px -230px;
+    background-position: 5px -230px;
 
 
 }
@@ -229,5 +231,127 @@ form h1 {
  
 }
 
-
 /* end of pricing styles */
+
+
+/* start of account styles */
+
+.acc-bg {
+    height: 550px;
+    background-image: url('/assets/images/signupbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -30px 0px;
+
+}
+
+.create-acc form {
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 196, 173, 0.5);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+@media screen and (max-width: 767px) {
+    .create-acc form {
+        margin-top: 80px;
+        margin-right: 70px;
+    }    
+ 
+}
+
+.create-acc h2 {
+    font-size: 35px;
+}
+
+.signup-acc form {
+    margin-top: 10px;
+    color: rgb(218, 156, 156);
+    background-color: rgb(37, 91, 153);
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-acc form h1 {
+    font-size: 90px;
+}
+
+@media screen and (max-width: 767px) {
+    .signup-acc form {
+        margin-top: 10px;
+        margin-right: 70px;
+        
+    }    
+
+    .signup-acc form h1 {
+        font-size: 50px;
+    }
+    
+}
+
+@media (min-width: 990px) and (max-width: 1240px) {
+    .signup-acc form h1 {
+        font-size: 70px;
+    }
+   
+
+}
+
+.signup-btn button {
+    border-radius: 5px;
+    animation: shadow-glowing 1s infinite;
+}
+
+@keyframes shadow-glowing {
+    0% {
+        box-shadow: 0 0 0px rgb(255, 255, 255); 
+    }
+    50% {
+        box-shadow: 0 0 60px rgb(255, 255, 255); 
+    }
+    100% {
+        box-shadow: 0 0 0px rgb(255, 255, 255); 
+    }
+}
+
+.signup-btn button:hover {
+    background-color: rgb(255, 0, 0);
+    border: white;
+    cursor: pointer;
+}
+
+.signin-btn {
+    background-color: rgb(54, 161, 161);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.signin-btn button:hover {
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);;
+    cursor: pointer;
+}
+
+
+
+/* end of account styles */
+
+/* start of footer styles  */
+
+/* footer .foot-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+footer {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+footer .foot-connect img {
+    width: 50px;
+    height: 50px;
+}
+
+/* end of footer styles  */
