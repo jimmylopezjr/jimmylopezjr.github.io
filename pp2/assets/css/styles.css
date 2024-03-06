@@ -515,6 +515,13 @@ form .message-paragraph, .email {
 
 /* end of mp-menu calendar styles */
 
+/* start of mp-menu ps styles */
+    .mp-menu-ps {
+        margin-left: 0px;
+    }
+
+
+/* end of mp-menu ps styles */
 
 
 /* END OF MY PROJECTS STYLES */
