@@ -1,0 +1,717 @@
+/* start of general styles */
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth !important;
+
+
+}
+
+:root {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New';
+}
+
+/* end of general styles */
+
+/* start of main styles */
+main {
+    background-image: url("images/mainbg.jpg");
+    width:100%;
+    height: 3500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+
+}
+
+/* end of main styles */
+
+/* start of nav styles */
+
+.navbar {
+    width:1250px;    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    position: sticky;
+    top: 0px;
+}
+
+
+.divlogo {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.divlogo img + li {
+    display: flex;
+}
+
+.divlogo img {
+    width:50px;
+    height: 50px;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+}
+}
+
+.divlogo ul {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+    font-weight: bold;
+    border-right: 2px solid rgb(0, 0, 0, 0.2);
+
+}
+
+
+.divlogo a, .navmenu ul a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+.divlogo a:hover {
+    cursor: pointer;
+} 
+
+.navmenu ul li a {
+    text-decoration: none;
+    position: relative; 
+}
+
+.navmenu ul li a::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0;    
+    left: 0; 
+    width: 0;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.5s ease; 
+}
+
+.navmenu ul li a:hover::after {
+    width: 100%; 
+}
+
+.navmenu {
+    width: 70%;
+}
+
+.navmenu ul {
+    display: flex;
+    list-style: none;    
+    justify-content: space-evenly;
+}
+   
+.navmenu ul li {   
+    align-items: center;
+}
+
+
+.dropdown-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+ul li ul.dropdown-items {
+
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li ul.dropdown-items a:hover {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* end of nav styles */
+
+
+/* start of section main styles */
+
+.sectionmain {
+    width: 1200px;
+    height: 500px;
+    margin: 0px auto;
+ 
+}
+
+ 
+
+/* end of section main styles */
+
+/* start of section about styles */
+
+#secabout {
+    width: 100%;
+    height: 500px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#secabout .title, .content {
+    display: flex;
+}
+
+#secabout .title{
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#secabout .content {
+    display: flex;
+    padding-left: 25px;
+    flex-direction: row;
+    height: 500px;
+    background-image: url("images/secaboutmainbg.jpg");
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#secabout .content .des {
+    text-align: justify;
+
+}
+
+#secabout .content div {
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.content .des h2 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 50px;
+}
+
+.content .des p {
+    font-family: Comic Sans MS, Comic Sans, cursivemonospace;
+    font-size: 25px;
+    text-indent: 20px;
+
+}
+
+
+
+
+/* end of section about styles */
+
+
+
+/* start of section services styles */
+
+#secservices {
+    width: 100%;
+    height: 500px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#secservices .content{
+    width: 100%;
+    height: 500px;
+    background-image: url("images/secservicesbg.jpg");
+    background-size: cover;
+    background-position: 0px -200px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#secservices .content div {
+    height: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+}
+
+#secservices .content div form {
+    background-color: white;
+    height: 200px;
+    color: black;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+#secservices .content div form:hover {
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+.content form img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#secservices .content div form p {
+    text-align: justify;
+    font-size: 15px;
+    padding: 7px;
+    font-family: sans-serif;
+}
+
+/* end of section services styles */
+
+/* start of section payment styles */
+
+#secpayments {
+    width: 100%;
+    height: 700px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#secpayments .paymentdes {
+    text-align: center;
+}
+
+#secpayments .paymentdes h1 {
+    font-size: 40px;    
+}
+
+.paymentdes #pricedes {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#secpayments .content{
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#secpayments .content div{
+    padding: 0px;
+
+}
+
+#secpayments .content div form{
+    width: 350px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#secpayments .content div form:hover{
+    background-color: rgb(71, 71, 71);
+    transition: 0.3s ease;
+    color: aliceblue;
+}
+
+#i-acad-pay {
+    height: 80px;
+}
+
+.content div form li {
+    list-style-type: square;
+    font-weight: bold;
+}
+
+form h1 {
+    font-size: 30px;
+    font-family: Marker Felt, fantasy;
+    font-weight: 80;
+}
+
+
+form p {
+    font-style: italic;
+}
+
+.res-pay form {
+    background-color: rgb(223, 202, 41);
+}
+
+.acad-pay form {
+    background-color: rgb(18, 173, 176);
+}
+
+.data-pay form {
+    background-color: rgb(41, 85, 166);
+}
+
+.modepay {
+    margin-left: 45px;
+}
+
+.modepay {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Marker Felt, fantasy;
+    font-weight: 20;
+    color: rgb(26, 74, 116);
+    padding: 0px;
+}
+
+
+/* end of payment section styles */
+
+/* start of payments sections styles */
+
+#secmyaccounts {
+    width: 1200px;
+    height: 500px;
+    padding-top: 150px;
+}
+
+#secmyaccounts .content{
+    width: 1200px;
+    color: white;
+    height: 500px;
+    display: flex;
+}
+
+#secmyaccounts .content div {
+    width: 600px;
+}
+
+.signup-des {
+    background-image: url("/pp1/assets/images/signupbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -120px 0px;
+    
+}
+
+.signup-des {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.signup-des div:first-child {
+    padding-left: 180px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.signup-des div:first-child h2 {
+    background-color: rgb(83, 250, 194);
+    text-align: center;
+    margin: 0px;
+    font-size: 40px;
+    box-shadow: 5px 5px 2px  rgb(50, 153, 119, 0.5);
+}
+
+.signup-des div:nth-child(2) {
+    padding-left: 180px;
+    font-size: 25px;
+    color: rgb(251, 100, 100);
+
+}
+
+.signup-des div:nth-child(2) h1 {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(43, 83, 226);
+    margin: 0px;
+    font-size: 90px;    
+    border-radius: 50px;
+    box-shadow: 8px 8px 3px rgb(63, 62, 63, 0.5);
+}
+
+.signup-des div:nth-child(3) {
+    height: 300px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end
+}
+
+.signup-des button {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 197, 197);
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-bottom: 3px solid rgb(255, 255, 255, 0.8); 
+    border-right: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    animation: shadow-glowing 2s infinite;
+}
+
+@keyframes shadow-glowing {
+    0% {
+        box-shadow: 0 0 0px rgb(255, 0, 0); 
+    }
+    50% {
+        box-shadow: 0 0 200px rgb(255, 0, 0); 
+    }
+    100% {
+        box-shadow: 0 0 0px rgb(255, 0, 0); 
+    }
+}
+
+.signup-des button:hover {
+    cursor: pointer;
+}
+
+.signup-des button img {
+    width: 40px;
+    height: 40px;
+}
+
+.signin-form {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.signin-form form {
+    height: 300px;
+    padding: 40px;
+    background-color: rgb(15, 136, 155, 0.7);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid rgb(255, 255, 255, 0.8); 
+    border-right: 2px solid rgb(255, 255, 255);
+
+}
+
+
+.signin-form form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.signin-form form input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+}
+
+.signin-form form button {
+    margin-left:75px;
+    padding: 5px;
+    font-size: 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.8); 
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+/* end of payment section styles */
+
+
+/* start of footer styles */
+
+footer {
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(0, 0, 0, 0.3);
+    margin: 2400px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+footer div {
+    margin-top: 20px;
+}
+
+.footlogo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footlogo h1 {
+    list-style: none;
+    text-decoration: none; 
+    margin: 0px;
+    padding: 0px;
+}
+
+.footlogo p {
+    text-align: justify;
+}
+
+.footlogo .aced-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+.footlogo .aced-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+footer .foot-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer .foot-connect h1 {
+    margin-bottom: 30px;
+}
+
+footer .foot-connect img {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+
+.foot-connect img {
+    transition: filter 0.3s;
+}
+
+.foot-connect img:hover {
+    filter: brightness(0.5);
+}
+
+.footlogo > div:last-child {
+    display: flex;
+    align-self: center;
+    margin-top: 0px;
+    
+}
+
+
+.foot-connect {
+    width: auto;
+}
+
+.foot-connect img:hover {
+    
+}
+
+.foot-message {
+    width: 40%;    
+}
+
+
+footer .foot-message h1 {
+    margin-bottom: 50px;
+}
+
+.foot-message form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+form h1, h4 {
+    text-align: center;
+    
+}
+
+form h4 {
+    margin-top: 0px;
+    font-family: sans-serif;
+}
+
+form .email {
+    width: 70%;
+    height: 30px;
+    align-self: center;
+    border-radius: 2px;
+    border: none;
+}
+
+form .message-paragraph {
+    width: 70%;
+    height: 100px;
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+}
+
+form .message-paragraph, .email {
+    justify-content: end;
+}
+
+.email::placeholder,
+.message-paragraph::placeholder {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button {
+    width: 90px;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color:rgb(30,144,255);
+    color: white;
+    font-family:  Sans MS, Comic Sans, cursive;
+    padding: 4px;
+
+}
+
+form button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+    color: black;
+    box-shadow: 2px 2px;
+    cursor: pointer;
+
+
+}
+
+/* end of footer styles */
