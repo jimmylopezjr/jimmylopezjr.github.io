@@ -428,7 +428,7 @@ form .message-paragraph, .email {
 
 
 /* start of mp-menu styles */
-
+  
 
     .mp-menu div a {
         text-decoration: none;
@@ -520,11 +520,101 @@ form .message-paragraph, .email {
         margin-left: 0px;
     }
 
-    @media only screen and (min-width: 600px) and (max-width: 900px) {
-        /* Your CSS styles for this range */
+    @media only screen and (min-width: 767px) and (max-width: 1199px) {
+        .mp-menu-ps div h2 {
+            font-size: 15px;
+        }
+    }
+
+    .mp-menu-ps-file > div > div button:hover {
+        background-color: rgb(209, 209, 209);
+    
+    }
+
+      .mp-menu-ps-file > div > div:nth-child(1) button img {
+        width: 13px;
+        height: 13px;
       }
+
+      .scroll-bar-file {
+        background-color: rgb(0, 0, 0, 0.1);
+        overflow-y: auto;
+        max-height: 223px;
+      }
+
+      .scroll-bar-converse {
+        overflow-y: auto;
+        max-height: 400px;
+        text-align: justify;
+        background-color: rgb(0, 0, 0, 0.1);
+      }
+
+      .mp-menu-ps-converse textarea {
+        margin-bottom: 20px;
+        width: 285px;
+
+      }
+
+      .mp-menu-ps-converse button:hover {
+        background-color: rgb(207, 207, 207);
+
+      }
+
+
+      @media screen and (max-width: 1400px) {
+        .mp-menu-ps-converse textarea {
+            width: 250px;
+    
+          }
+    }
+
+    
+    @media screen and (max-width: 1200px) {
+        .mp-menu-ps-converse textarea {
+            width: 210px;
+    
+          }
+    }
+
+        
+    @media screen and (max-width: 1033px) {
+        .mp-menu-ps-converse textarea {
+            width: 190px;
+    
+          }
+    }
+
+    
+    @media screen and (max-width: 990px) {
+        .mp-menu-ps-converse textarea {
+            width: 140px;
+    
+          }
+    }
+
+    @media screen and (max-width: 767px) {
+        .mp-menu-ps-converse textarea {
+            width: 100%;       
+         }
+    }
+
+    .mp-menu-ps-rem  .remarks-content {
+        background-color: rgb(0, 0, 0, 0.1);
+    }
 
 /* end of mp-menu ps styles */
 
 
 /* END OF MY PROJECTS STYLES */
+
+
+.mp-menu-ps-converse {
+    padding: 0;
+    margin: 0;
+}
+
+
+.mp-menu-ps-file {
+    padding: 0;
+    margin: 0;
+}
