@@ -9,34 +9,34 @@
     <title>ACED Research Consultancy Website</title>
 </head>
 <body>
-    <main id="main-div" class="container col-lg-11 col-12">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
-            <div class="nav-menu container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="Logo" height="30">
-                ACED Research Consultancy
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sec-about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sec-services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sec-pricing">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sec-accounts">My Accounts</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>        
+    <nav class="navbar navbar-expand-lg navbar-light mb-2 col-12 pt-2 px-5">
+        <div class="nav-menu container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="Logo" height="30">
+            ACED Research Consultancy
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-accounts">My Accounts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>  
+    <main id="main-div" class="container col-lg-12">
         <div class="col-12  d-flex flex-column">
             <section id="sec-about" class="container col-12 mb-2 mt-5">  
                 <div class="col-12 d-flex ml-5">
@@ -173,30 +173,41 @@
                 </div>
             </section>
         </div>
-        <footer class="col-12 d-flex flex-row flex-wrap justify-content-center">
-            <div class="foot-logo col-md-5 col-12 p-4 text-white">
-                <h2> ACED </h2>
-                <h2> Research Consultancy </h2>
-                <div id="logo-des">
-                    <p> ACED Learning Center is an esteemed organization dedicated to providing comprehensive support in social science research paper works and consultancy, catering to both personal and academic needs. With a focus on excellence, we specialize in delivering a wide range of academic paper works, including meticulous research papers. Our team comprises highly qualified professionals who are committed to delivering exceptional results, ensuring every project is handled with precision and expertise.</p>
+    </main>
+        <footer>
+            <div class="col-12 d-flex flex-row flex-wrap justify-content-center">
+                <div class="foot-logo col-md-5 col-12 p-4 text-white border-bottom">
+                    <h2> ACED </h2>
+                    <h2> Research Consultancy </h2>
+                    <div id="logo-des">
+                        <p> ACED Learning Center is an esteemed organization dedicated to providing comprehensive support in social science research paper works and consultancy, catering to both personal and academic needs. With a focus on excellence, we specialize in delivering a wide range of academic paper works, including meticulous research papers. Our team comprises highly qualified professionals who are committed to delivering exceptional results, ensuring every project is handled with precision and expertise.</p>
+                    </div>
+                    <div class="aced-icons d-flex justify-content-evenly mt-4"> 
+                        <div> <img src="assets/images/research-icon.png" alt="research-icon">
+                            <p> Research <br> Paper Works </p>
+                        </div>
+                        <div> <img src="assets/images/academic-icon.png" alt="research-icon">
+                            <p> Academic <br> Works </p>
+                        </div>
+                        <div> <img src="assets/images/data-icon.png" alt="research-icon">
+                            <p> Data <br> Analysis </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="aced-icons d-flex justify-content-evenly mt-4"> 
-                    <div> <img src="assets/images/research-icon.png" alt="research-icon">
-                        <p> Research <br> Paper Works </p>
-                    </div>
-                    <div> <img src="assets/images/academic-icon.png" alt="research-icon">
-                        <p> Academic <br> Works </p>
-                    </div>
-                    <div> <img src="assets/images/data-icon.png" alt="research-icon">
-                        <p> Data <br> Analysis </p>
-                    </div>
-                </div>
-                <div class="text-center mt-2"> 
-                    <h5> -&nbsp;-&nbsp;-&nbsp;Since 2018 &nbsp;-&nbsp;-&nbsp;- </h5>
+                <div class="foot-message d-flex justify-content-center col-md-5 col-12 pt-5 border-bottom">
+                    <form class="d-flex flex-column align-items-center text-white"> 
+                        <h1 class="pb-5"> For Inquiries Message Us </h1>
+                        <input type="email" class="email" placeholder="Type your email here" required>
+                        <h5> Your Email</h5>
+                        <textarea type="text" class="message-paragraph" placeholder="Type your message here" required>
+                        </textarea>
+                        <h5> Your Message </h5>
+                        <button type="button" class="btn btn-primary mt-3"> Submit Message </button>
+                    </form>
                 </div>
             </div>
-            <div class="foot-connect d-flex flex-column align-items-center col-md-2 col-12 pt-5">
-                <h5 class="mb-4 text-white"> Connect Thru </h5>
+            <div class="foot-connect container d-flex flex-row align-items-center justify-content-evenly  col-md-8 mt-3 ">
+                <h5 class="mb-4 text-white"> Connect Us Thru: </h5>
                 <div class="mb-4"> <a href="https://www.facebook.com/"> <img src="assets/images/facebook.png" alt="research-icon"> </a>    
                 </div>
                 <div class="mb-4"> <a href="https://www.instagram.com/">  <img src="assets/images/instagram.png" alt="research-icon"> </a>
@@ -206,19 +217,12 @@
                 <div class="mb-4"> <a href="https://www.linkedin.com/login">  <img src="assets/images/linkedin.png" alt="research-icon"> </a>
                 </div>
             </div>
-            <div class="foot-message d-flex justify-content-center col-md-5 col-12 pt-5">
-                <form class="d-flex flex-column align-items-center text-white"> 
-                    <h1 class="pb-5"> For Inquiries Message Us </h1>
-                    <input type="email" class="email" placeholder="Type your email here" required>
-                    <h5> Your Email</h5>
-                    <textarea type="text" class="message-paragraph" placeholder="Type your message here" required>
-                    </textarea>
-                    <h5> Your Message </h5>
-                    <button type="button" class="btn btn-primary mt-3"> Submit Message </button>
-                </form>
+            <div class="text-center text-white pb-2"> 
+                <h5> -&nbsp;-&nbsp;-&nbsp;Since 2018 &nbsp;-&nbsp;-&nbsp;- </h5>
             </div>
+
         </footer>
-    </main>
+
 </body>
 </html>
 

@@ -18,11 +18,16 @@ body {
 /* end of main styles */
 
 /* start of nav styles */
-
-nav {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
-    font-family: 'Courier New', Courier, monospace; 
-     
+.navbar {
+    width:100%;    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    margin: 0px auto;
+    position: sticky;
+    top: 0px;
 }
 
 nav a img {
@@ -65,6 +70,7 @@ nav a img {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 #sec-about div {
@@ -130,7 +136,7 @@ nav a img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 5px -230px;
-
+    border-radius: 10px;
 
 }
 
@@ -200,22 +206,25 @@ form h1 {
 
 .res-pay {
     background-color: rgb(223, 202, 41);
+    border-radius: 10px;
 }
 
 
 .acad-pay form {
     background-color: rgb(18, 173, 176);
     margin-top: 100px;
+    border-radius: 10px;
 }
 
 .data-pay form {
     background-color: rgb(41, 85, 166);
+    border-radius: 10px;
 }
 
 .secpayments div form{
     color: rgb(255, 255, 255);
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
-
+    border-radius: 10px;
 }
 
 .secpayments div form:hover{
@@ -242,15 +251,22 @@ form h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -30px 0px;
+    border-radius: 10px;
 
 }
 
 .create-acc form {
     margin-top: 100px;
+    margin-right: 10px;
     color: rgb(255, 255, 255);
     background-color: rgb(59, 196, 173, 0.5);
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
 
+}
+
+.signin-btn {
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -269,8 +285,10 @@ form h1 {
     margin-top: 10px;
     color: rgb(218, 156, 156);
     background-color: rgb(37, 91, 153);
-    border-radius: 10px;
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+
 }
 
 .signup-acc form h1 {
@@ -308,7 +326,7 @@ form h1 {
         box-shadow: 0 0 0px rgb(255, 255, 255); 
     }
     50% {
-        box-shadow: 0 0 60px rgb(255, 255, 255); 
+        box-shadow: 0 0 15px rgb(255, 255, 255); 
     }
     100% {
         box-shadow: 0 0 0px rgb(255, 255, 255); 
@@ -373,7 +391,7 @@ footer .foot-connect img {
 }
 
 .foot-message form button {
-    box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5);
 
 }
 
