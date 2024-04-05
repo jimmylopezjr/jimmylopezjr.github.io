@@ -1,0 +1,688 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth !important;
+
+}
+
+
+body {
+    background-image: url('../images/mainbg.jpg');
+    width:100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* end of main styles */
+
+/* start of nav styles */
+
+nav {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Courier New', Courier, monospace; 
+     
+}
+
+nav a img {
+    width:50px;
+    height: 50px;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+}
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    nav div:first-child a {
+        font-size: 14px;
+    }
+}
+
+
+/* end of nav styles */
+
+/* start of home styles */
+
+/* end of of home styles */
+
+/* start of about styles */    
+#sec-about {
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/secaboutmainbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sec-about div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 30px;
+
+}
+
+#sec-about div h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#sec-about div p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #sec-about div {
+        padding-left: 10px;
+    
+    }
+    
+    #sec-about div h2 {
+        font-size: 30px;
+    }
+
+    #sec-about div p {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }   
+}
+
+
+/* end of about styles */
+
+/* start of services styles */
+
+#sec-services {
+    padding: 0%;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    #sec-services {
+        height: 800px;
+    }
+    
+}
+
+.form-div {
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/secservicesbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5px -230px;
+
+
+}
+
+.form-div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+
+}
+
+.form-div div > form {
+    background-color: rgb(255, 255, 255);   
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.form-div div > form:hover {
+    transform: scale(1.07);
+}
+
+@media screen and (max-width: 1230px) {
+    
+    .form-div div > form {
+        height: 320px;
+
+}
+ 
+}
+
+@media screen and (max-width: 767px) {
+    
+    .form-div .first-form {
+        margin-top: 200px;
+    }
+
+    .form-div div > form {
+        margin-bottom: 10px;
+        height: 180px;
+
+}
+ 
+}
+
+/* end of services styles */
+
+
+/* start of pricing styles */
+
+#sec-pricing .titdes h1 {
+    font-size: 50px;
+}
+
+#sec-pricing .titdes p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+form h1 {
+    font-size: 30px;
+    font-family: Marker Felt, fantasy;
+    font-weight: 80;
+}
+
+.res-pay {
+    background-color: rgb(223, 202, 41);
+}
+
+
+.acad-pay form {
+    background-color: rgb(18, 173, 176);
+    margin-top: 100px;
+}
+
+.data-pay form {
+    background-color: rgb(41, 85, 166);
+}
+
+.secpayments div form{
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.secpayments div form:hover{
+    background-color: rgb(71, 71, 71);
+    transition: 0.3s ease;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 767px) {
+    .acad-pay form {
+        margin-top: 0px;
+    } 
+ 
+}
+
+/* end of pricing styles */
+
+
+/* start of account styles */
+
+.acc-bg {
+    height: 550px;
+    background-image: url('../images/signupbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -30px 0px;
+
+}
+
+.create-acc form {
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 196, 173, 0.5);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+@media screen and (max-width: 767px) {
+    .create-acc form {
+        margin-top: 80px;
+        margin-right: 70px;
+    }    
+ 
+}
+
+.create-acc h2 {
+    font-size: 35px;
+}
+
+.signup-acc form {
+    margin-top: 10px;
+    color: rgb(218, 156, 156);
+    background-color: rgb(37, 91, 153);
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-acc form h1 {
+    font-size: 90px;
+}
+
+@media screen and (max-width: 767px) {
+    .signup-acc form {
+        margin-top: 10px;
+        margin-right: 70px;
+        
+    }    
+
+    .signup-acc form h1 {
+        font-size: 50px;
+    }
+    
+}
+
+@media (min-width: 990px) and (max-width: 1240px) {
+    .signup-acc form h1 {
+        font-size: 70px;
+    }
+   
+
+}
+
+.signup-btn button {
+    border-radius: 5px;
+    animation: shadow-glowing 1s infinite;
+}
+
+@keyframes shadow-glowing {
+    0% {
+        box-shadow: 0 0 0px rgb(255, 255, 255); 
+    }
+    50% {
+        box-shadow: 0 0 60px rgb(255, 255, 255); 
+    }
+    100% {
+        box-shadow: 0 0 0px rgb(255, 255, 255); 
+    }
+}
+
+.signup-btn button:hover {
+    background-color: rgb(255, 0, 0);
+    border: white;
+    cursor: pointer;
+}
+
+.signin-btn {
+    background-color: rgb(54, 161, 161);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.signin-btn .signinbut:hover {
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);;
+    cursor: pointer;
+}
+
+
+
+/* end of account styles */
+
+/* start of footer styles  */
+
+footer {
+    background-color: rgb(0, 0, 0, 0.2);
+    height: auto;
+}
+
+#logo-des p {
+    text-align: justify;
+}
+
+.aced-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+footer .foot-connect img {
+    width: 50px;
+    height: 50px;
+}
+
+.foot-connect img {
+    transition: filter 0.3s;
+}
+
+.foot-connect img:hover {
+    filter: brightness(0.5);
+}
+
+.foot-message form {
+    width: 350px;
+    height: 400px;
+
+}
+
+.foot-message form button {
+    box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.5);
+
+}
+
+.foot-message form button:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color:black;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+form .email {
+    width: 70%;
+    height: 30px;
+    align-self: center;
+    border-radius: 2px;
+    border: none;
+}
+
+form .message-paragraph {
+    width: 70%;
+    height: 100px;
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+}
+
+form .message-paragraph, .email {
+    justify-content: end;
+}
+
+.email::placeholder,
+.message-paragraph::placeholder {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 340px) {
+    .foot-message form h1 {
+        font-size: 25px;
+    }
+    
+}
+
+
+/* end of footer styles  */
+
+
+/* START OF MY PROJECTS STYLES */
+
+
+/* start of mp-menu styles */
+  
+
+    .mp-menu div a {
+        text-decoration: none;
+        color: black;
+    }   
+
+    @media screen and (max-width: 321px) {
+        .mp-menu div {
+            font-size: 10px;
+        }           
+    }
+    
+
+/* end of mp-menu styles */
+
+/* start of mp-menu updates styles */
+    .mp-menu-update {
+        height: 500px;
+    }
+
+    .mp-menu-update div:first-child {
+        text-align: center;
+    }
+    .mp-menu-update div:last-child {
+        background-image: url('../images/mp-menu-update.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .mp-menu-update button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .mp-menu-update button {
+        background-color: rgb(79, 82, 244);
+        border: none;
+    }
+
+    .mp-menu-update button:hover {
+        background-color: rgb(255, 0, 0);
+        border-color: rgb(255, 0, 0);;
+        cursor: pointer;
+    }           
+
+
+/* start of mp-menu updates styles */
+
+/* start of mp-menu calendar styles */
+    .mp-menu-calendar {
+        height: 600px;
+        background-image: url('../images/mp-menu-calendar.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -90px;
+    }
+
+    .mp-menu-calendar div:first-child {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        color: white;
+
+    }
+
+    iframe {
+        border: 1px solid black;
+        padding: 10px;
+        box-shadow: 1px 1px 5px 5px rgb(133, 133, 133);
+    }
+
+    @media screen and (max-width: 768px) {
+        iframe {
+            width: 400px;
+            height: 300px;
+        }              
+    }
+
+    @media screen and (max-width: 415px) {
+        iframe {
+            width: 300px;
+            height: 300px;
+        }              
+    }
+
+/* end of mp-menu calendar styles */
+
+/* start of mp-menu ps styles */
+    .mp-menu-ps {
+        margin-left: 0px;
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 1199px) {
+        .mp-menu-ps div h2 {
+            font-size: 15px;
+        }
+    }
+
+    .mp-menu-ps-file > div > div button:hover {
+        background-color: rgb(209, 209, 209);
+    
+    }
+
+      .mp-menu-ps-file > div > div:nth-child(1) button img {
+        width: 13px;
+        height: 13px;
+      }
+
+      .scroll-bar-file {
+        background-color: rgb(0, 0, 0, 0.1);
+        overflow-y: auto;
+        max-height: 223px;
+      }
+
+      .scroll-bar-converse {
+        overflow-y: auto;
+        max-height: 400px;
+        text-align: justify;
+        background-color: rgb(0, 0, 0, 0.1);
+      }
+
+      .mp-menu-ps-converse textarea {
+        margin-bottom: 20px;
+        width: 285px;
+
+      }
+
+      .mp-menu-ps-converse button:hover {
+        background-color: rgb(207, 207, 207);
+
+      }
+
+
+      @media screen and (max-width: 1400px) {
+        .mp-menu-ps-converse textarea {
+            width: 250px;
+    
+          }
+    }
+
+    
+    @media screen and (max-width: 1200px) {
+        .mp-menu-ps-converse textarea {
+            width: 210px;
+    
+          }
+    }
+
+        
+    @media screen and (max-width: 1033px) {
+        .mp-menu-ps-converse textarea {
+            width: 190px;
+    
+          }
+    }
+
+    
+    @media screen and (max-width: 990px) {
+        .mp-menu-ps-converse textarea {
+            width: 140px;
+    
+          }
+    }
+
+    @media screen and (max-width: 767px) {
+        .mp-menu-ps-converse textarea {
+            width: 100%;       
+         }
+    }
+
+    .mp-menu-ps-rem  .remarks-content {
+        background-color: rgb(0, 0, 0, 0.1);
+    }
+
+/* end of mp-menu ps styles */
+
+/* start of mp-menu pl styles */
+
+.circle1 {
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000; 
+    border-radius: 50%; 
+  }
+
+  .circle2 {
+    width: 50px;
+    height: 50px;
+    background-color: #209365; 
+    border-radius: 50%; 
+  }
+
+  .circle3 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(23, 162, 184); 
+    border-radius: 50%; 
+  }
+
+  .circle4 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 123, 255); 
+    border-radius: 50%; 
+  }
+
+  @media screen and (max-width: 767px) {
+    .status h5 {
+        font-size: 15px;       
+     }
+}
+
+@media screen and (max-width: 426px) {
+    .status h5 {
+        font-size: 12px;       
+     }
+}
+
+@media screen and (max-width: 375px) {
+    .status h5 {
+        font-size: 10px;       
+     }
+}
+
+@media screen and (max-width: 320px) {
+    .status h5 {
+        font-size: 8px;       
+     }
+
+}
+
+/* end of mp-menu pl styles */
+
+/* start of fin-menu styles */
+    .content-fin {
+        width: 100%;
+        height: 500px;
+        background-image: url('../images/work-in-progress.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+/* end of fin-menu styles */
+
+
+/* END OF MY PROJECTS STYLES */
+
+.mp-menu-ps-converse {
+    padding: 0;
+    margin: 0;
+}
+
+
+.mp-menu-ps-file {
+    padding: 0;
+    margin: 0;
+}
