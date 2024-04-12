@@ -496,40 +496,33 @@ form .message-paragraph, .email {
 /* start of mp-menu updates styles */
 
 /* start of mp-menu calendar styles */
-    .mp-menu-calendar {
-        height: 600px;
-        background-image: url('../images/mp-menu-calendar.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 0px -90px;
-    }
+.tableCalendar {
+    width: 100%; /* Optional: Adjust the width of the table as needed */
+    cursor: pointer;
+  }
 
-    .mp-menu-calendar div:first-child {
-        background-color: rgba(0, 0, 0, 0.5);
-        text-align: center;
-        color: white;
-
+  @media (max-width: 457px) { /* Target medium screens (usually around 768px) */
+    .tableDiv {
+        width: 100%; /* Make the table fill available width */
+        overflow: scroll;  /* Enable horizontal scrollbar */
     }
+}
+ 
+  .tableCalendar td {
+    width: 5px; /* 100% divided by 5 columns = 20% width for each cell */
+    height: 50px; /* 100% divided by 6 rows = 16.67% height for each cell */
+    background-color: #209365;
+    border: 2px solid white;
+  }
 
-    iframe {
-        border: 1px solid black;
-        padding: 10px;
-        box-shadow: 1px 1px 5px 5px rgb(133, 133, 133);
-    }
+  .tableCalendar th {
+    background-color: #7c2828; /* Example color for heading row */
+    border: 2px solid white;
+  }
 
-    @media screen and (max-width: 768px) {
-        iframe {
-            width: 400px;
-            height: 300px;
-        }              
-    }
-
-    @media screen and (max-width: 415px) {
-        iframe {
-            width: 300px;
-            height: 300px;
-        }              
-    }
+  .tableCalendar th:hover, .tableCalendar td:hover {
+    background-color: beige;
+  }
 
 /* end of mp-menu calendar styles */
 
